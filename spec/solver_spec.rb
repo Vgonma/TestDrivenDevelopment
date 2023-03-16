@@ -16,5 +16,11 @@ describe Solver do
       expect(solver.reverse('hello')).to eql('olleh')
       expect(solver.reverse('hello world')).to eql('olleh dlrow')
     end
+
+    it '#fizzbuzz return correct value' do
+      expect(solver.fizzbuzz(3)).to eql('fizz')
+      expect(solver.fizzbuzz(5)).to eql('buzz')
+      expect(solver.fizzbuzz(15)).to eql('fizzbuzz')
+      expect(solver.fizzbuzz(4)).to eql('4')
   end
 end
