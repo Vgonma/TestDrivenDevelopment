@@ -1,5 +1,7 @@
 class Solver
   def factorial(number)
+    return 'OnlyPossitiveNumbers' if number.negative?
+
     if number.zero?
       1
     else

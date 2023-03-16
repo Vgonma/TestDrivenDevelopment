@@ -10,6 +10,7 @@ describe Solver do
       expect(@solver.factorial(0)).to eql(1)
       expect(@solver.factorial(3)).to eql(6)
       expect(@solver.factorial(10)).to eql(3_628_800)
+      expect(@solver.factorial(-1)).to eql('OnlyPossitiveNumbers')
     end
 
     it '#reverse return reversed string' do
